@@ -126,9 +126,9 @@ function init() {
           })
         );
         building.position.set(
-          -50+w*r+r*gap,
-          0,
-          -50+w*c+c*gap
+          (w + gap) * c - (n - 1) * (w + gap) / 2,
+          0, 
+          (d + gap) * r - (n - 1) * (d + gap) / 2        
         )
         buildings.add(building);
       }
